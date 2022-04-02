@@ -347,6 +347,7 @@ static jboolean DexFile_closeDexFile(JNIEnv* env, jclass, jobject cookie) {
   return all_deleted ? JNI_TRUE : JNI_FALSE;
 }
 
+//yangzc findClass最终走到这个方法
 static jclass DexFile_defineClassNative(JNIEnv* env,
                                         jclass,
                                         jstring javaName,
